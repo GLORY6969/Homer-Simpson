@@ -1,0 +1,242 @@
+/* #d1b271--> color-creme
+#fed90f--> color-yellow
+#de433f--> color-background */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  background-color: #de433f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head {
+  width: 215px;
+  height: 405px;
+  position: relative;
+}
+.forehead {
+  width: 170px;
+  height: 200px;
+  background-color: #fed90f;
+  border-radius: 60% / 50%;
+  position: absolute;
+  border: 1px solid black;
+  border-bottom: 0;
+  transform: rotate(-18deg);
+  top: 10px;
+}
+.forehead::after {
+  content: "";
+  width: 80px;
+  height: 70px;
+  position: absolute;
+  border-top: 3px solid black;
+  border-radius: 50%;
+  top: -8px;
+  left: 20px;
+  transform: rotate(-25deg);
+}
+.forehead::before {
+  content: "";
+  width: 80px;
+  height: 70px;
+  position: absolute;
+  border-top: 3px solid black;
+  border-radius: 50%;
+  top: -18px;
+  left: 35px;
+  transform: rotate(-25deg);
+}
+.face-side1 {
+  width: 140px;
+  height: 60px;
+  background-color: #fed90f;
+  position: absolute;
+  top: 185px;
+  left: 30px;
+  border-left: 1px solid black;
+}
+.eyes {
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  border: 1.5px solid black;
+  border-radius: 50%;
+  background-color: aliceblue;
+  top: 110px;
+  left: 120px;
+}
+.eyes::after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  top: 40px;
+  left: 30px;
+}
+.eye {
+  top: 115px;
+  left: 60px;
+}
+.eye::after {
+  left: 25px;
+}
+.neck {
+  width: 125px;
+  height: 150px;
+  position: absolute;
+  background-color: #fed90f;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  top: 200px;
+  left: 27px;
+  transform: rotate(2.5deg);
+}
+.nose {
+  width: 60px;
+  height: 32px;
+  position: absolute;
+  background-color: #fed90f;
+  border: 1px solid black;
+  border-left: none;
+  border-radius: 0 20px 20px 0;
+  top: 175px;
+  left: 130px;
+  z-index: 1;
+}
+
+.face-side2 {
+  width: 40px;
+  height: 60px;
+  position: absolute;
+  background-color: #fed90f;
+  border-left: 1px solid black;
+  top: 165px;
+  left: 22px;
+  transform: rotate(-10.7deg);
+}
+.ear {
+  width: 32px;
+  height: 37px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: #fed90f;
+  top: 200px;
+  left: 10px;
+  position: absolute;
+  transform: rotate(18deg);
+}
+.ear::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  transform: rotate(-90deg);
+}
+.ear::before {
+  content: "";
+  width: 8px;
+  border-top: 1px solid black;
+  position: absolute;
+  top: 12px;
+  left: 9px;
+  transform: rotate(5deg);
+}
+.mouth1 {
+  position: absolute;
+  background-color: #d1b271;
+  width: 115px;
+  height: 120px;
+  border: 1px solid black;
+  border-radius: 50%;
+  top: 207px;
+  left: 60px;
+}
+.mouth2 {
+  position: absolute;
+  width: 20px;
+  height: 30px;
+  border-right: 1px solid black;
+  border-radius: 50%;
+  background-color: #d1b271;
+  top: 260px;
+  left: 162px;
+  transform: rotate(15deg);
+}
+.mouth3 {
+  width: 120px;
+  height: 60px;
+  position: absolute;
+  background-color: #d1b271;
+  border-bottom: 1px solid black;
+  border-radius: 50%;
+  top: 225px;
+  left: 85px;
+  transform: rotate(-4deg);
+}
+.mouth4 {
+  width: 35px;
+  height: 38px;
+  background-color: #d1b271;
+  position: absolute;
+  border-top: 1px solid black;
+  border-radius: 10%;
+  transform: rotate(34deg);
+  top: 225px;
+  left: 158px;
+}
+.mouth5 {
+  width: 60px;
+  height: 30px;
+  background-color: #d1b271;
+  position: absolute;
+  border-right: 1px solid black;
+  border-top-right-radius: 70%;
+  top: 200px;
+  left: 130px;
+}
+.mouth5::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: #d1b271;
+  position: absolute;
+  top: 50px;
+  left: -65px;
+  border-radius: 50%;
+}
+.collar1 {
+  position: absolute;
+  width: 110px;
+  height: 60px;
+  border-radius: 10%;
+  background-color: #fff;
+  border: 1px solid black;
+  top: 335px;
+  left: 10px;
+  transform: rotate(15deg);
+}
+.collar2 {
+  position: absolute;
+  width: 20px;
+  height: 50px;
+  border-radius: 10%;
+  background-color: #fff;
+  border: 1px solid black;
+  top: 345px;
+  left: 150px;
+  transform: rotate(-20deg);
+}
